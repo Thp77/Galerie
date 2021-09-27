@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Galery{% endblock %}
+
+{% block body %}
+
+<section>
+
+<div class="container">
+
+
+         <div  class="col mt-5 py-5">
+          <a href="{{path('artistes')}}" class="btn  text-white btn-block btn-lg" >Voir les Artistes</a>     
+         </div>
+  
+
+         <div  class="col mt-5 py-5">
+          <a href="{{path('oeuvres')}}" class="btn  text-white btn-block btn-lg" >Voir les Oeuvres</a>     
+         </div>
+  
+</div>
+
+</section>
+{% endblock %}

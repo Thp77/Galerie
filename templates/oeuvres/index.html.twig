@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Oeuvres{% endblock %}
+
+{% block body %}
+
+<section>
+
+<div class="container">
+{% for item in chef %}
+
+    <div class="row d-flex justify-content-arround">
+        <div class="col mt-4 py-5">
+           <h3 class="titre_c">{{item.name}}</h3> 
+          </div>
+        <div  class="col mt-4 py-5" >
+           <h4 class="titre_c">{{item.email}}</h4> 
+        </div>
+            <div  class="col mt-4 py-5">
+          <h4 class="titre_c" >{{item.menus}}</h4>     
+          </div>
+        <div  class="col mt-4 py-5" >
+          <img src="/chef/{{ item.photo}}" class="img-fluid  img-chef"alt="img">
+  
+        </div>
+   
+        {% endfor %}
+    </div>
+</div>
+
+</section>
+{% endblock %}
